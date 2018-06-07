@@ -1,0 +1,51 @@
+.notifications {
+  position: fixed;
+  z-index: 99;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.notification {
+  position: relative;
+  display: block;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.notification__close {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.notification__close:hover {
+  color: #90cf93;
+}
+
+.notification a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #90cf93;
+  z-index: 2;
+}
+
+.notification a:hover {
+  text-decoration: underline;
+}
+
+.notification--neutral {
+  background-color: rgba(0,0,0,0.8);
+  color: #efefef;
+}
